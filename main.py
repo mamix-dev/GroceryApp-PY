@@ -1,4 +1,7 @@
 from flask import Flask
+import os
+
+directory = os.path.dirname(os.path.abspath(__file__))
 
 webApp = Flask(__name__)
 
