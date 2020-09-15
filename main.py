@@ -5,6 +5,7 @@ directory = os.path.dirname(os.path.abspath(__file__))
 
 webApp = Flask(__name__)
 
-@app.route("/")
+# The landing page for the app.
+@webApp.route("/")
 def landing_page():
-    print("Test")
+    return directory + "/index.html"
